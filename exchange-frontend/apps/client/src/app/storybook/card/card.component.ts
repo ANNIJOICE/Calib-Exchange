@@ -3,9 +3,8 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 @Component({
   selector: 'exchange-frontend-card',
   templateUrl: './card.component.html',
-  styleUrls: ['./card.component.scss'],
+  styleUrls: ['./card.component.scss']
 })
-
 export class CardComponent {
   @Input() title = '';
   @Input() subtitle = '';
@@ -14,4 +13,3 @@ export class CardComponent {
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   constructor() {}
 }
-

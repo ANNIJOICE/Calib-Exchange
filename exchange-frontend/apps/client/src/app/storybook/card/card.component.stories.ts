@@ -1,5 +1,3 @@
-
-
 import { CardComponent } from './card.component';
 import type { Meta, StoryObj } from '@storybook/angular';
 
@@ -10,41 +8,40 @@ const meta: Meta<CardComponent> = {
   render: (args: CardComponent) => ({
     props: {
       backgroundColor: null,
-      ...args,
-    },
+      ...args
+    }
   })
 };
 
 export default meta;
 type Story = StoryObj<CardComponent>;
 
-
 export const Empty: Story = {
-    args: {},
+  args: {}
 };
 
 export const WithTitle: Story = {
-    args: {
-        title: 'Hello card!',
-    }
+  args: {
+    title: 'Hello card!'
+  }
 };
 
 export const WithTitleAndSubtitle: Story = {
-    args: {
-        title: 'Hello card!',
-        subtitle: 'Well hello there 👋',
-    }
+  args: {
+    title: 'Hello card!',
+    subtitle: 'Well hello there 👋'
+  }
 };
 export const WithAction: Story = {
-    args: {
-        title: 'A card...',
-        subtitle: 'Waiting to be clicked-on',
-    }
+  args: {
+    title: 'A card...',
+    subtitle: 'Waiting to be clicked-on'
+  }
 };
 export const WithNotes: Story = {
-    args: {}
+  args: {}
 };
 
 WithNotes.parameters = {
-  notes: 'Just a few notes about this story...',
+  notes: 'Just a few notes about this story...'
 };

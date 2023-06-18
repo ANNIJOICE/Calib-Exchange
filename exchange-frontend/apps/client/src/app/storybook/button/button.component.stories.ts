@@ -9,14 +9,14 @@ const meta: Meta<ButtonComponent> = {
   render: (args: ButtonComponent) => ({
     props: {
       backgroundColor: null,
-      ...args,
-    },
+      ...args
+    }
   }),
   argTypes: {
     backgroundColor: {
-      control: 'color',
-    },
-  },
+      control: 'color'
+    }
+  }
 };
 
 export default meta;
@@ -26,26 +26,26 @@ type Story = StoryObj<ButtonComponent>;
 export const Primary: Story = {
   args: {
     primary: true,
-    label: 'Button',
-  },
+    label: 'Button'
+  }
 };
 
 export const Secondary: Story = {
   args: {
-    label: 'Button',
-  },
+    label: 'Button'
+  }
 };
 
 export const Large: Story = {
   args: {
     size: 'large',
-    label: 'Button',
-  },
+    label: 'Button'
+  }
 };
 
 export const Small: Story = {
   args: {
     size: 'small',
-    label: 'Button',
-  },
+    label: 'Button'
+  }
 };

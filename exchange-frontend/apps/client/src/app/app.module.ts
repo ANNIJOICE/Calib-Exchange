@@ -12,13 +12,13 @@ import { ButtonComponent } from './storybook/button/button.component';
     AppComponent,
     NxWelcomeComponent,
     CardComponent,
-    ButtonComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' }),
+    RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' })
   ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}

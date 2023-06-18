@@ -3,9 +3,8 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 @Component({
   selector: 'exchange-frontend-button',
   templateUrl: './button.component.html',
-  styleUrls: ['./button.component.scss'],
+  styleUrls: ['./button.component.scss']
 })
-
 export class ButtonComponent {
   /**
    * Is this the principal call to action on the page?
@@ -41,9 +40,10 @@ export class ButtonComponent {
   onClick = new EventEmitter<Event>();
 
   public get classes(): string[] {
-    const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+    const mode = this.primary
+      ? 'storybook-button--primary'
+      : 'storybook-button--secondary';
 
     return ['storybook-button', `storybook-button--${this.size}`, mode];
   }
 }
-
