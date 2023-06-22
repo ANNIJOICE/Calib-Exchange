@@ -1,13 +1,10 @@
 const config = {
   stories: ['../src/app/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
-  addons: [
-    '@storybook/addon-essentials',
-    "@storybook/addon-knobs"
-  ],
+  addons: ['@storybook/addon-essentials', '@storybook/addon-knobs'],
   framework: {
     name: '@storybook/angular',
-    options: {},
-  },
+    options: {}
+  }
 };
 
 export default config;
