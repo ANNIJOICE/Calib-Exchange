@@ -6,7 +6,8 @@ import { appRoutes } from './app.routes';
 import { NxWelcomeComponent } from './nx-welcome.component';
 import { CardComponent } from './storybook/card/card.component';
 import { ButtonComponent } from './storybook/button/button.component';
-
+import { InputBoxComponent } from './storybook/inputBox/input-box.component';
+import { MatProgressBarComponent } from './storybook/mat-progress-bar/mat-progress-bar.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,6 +17,8 @@ import { ButtonComponent } from './storybook/button/button.component';
   ],
   imports: [
     BrowserModule,
+    InputBoxComponent,
+    MatProgressBarComponent,
     RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' })
   ],
   providers: [],
